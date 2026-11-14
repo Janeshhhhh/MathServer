@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Calculation</title>
+    </head>
+    <body>
+        <center>
+            <h1>Janesh(26017589)</h1>
+            <h2>Customer Churn Rate</h2>
+
+            <form method="POST">
+                {% csrf_token %}
+                
+                <label>Customer Lost:</label>
+                <input type="number" value="{{ customerlost }}" name="custLost">
+                <br>
+                <br>
+                
+                <label>Initial Customer:</label>
+                <input type="number" value="{{ initialcustomer }}" name="initCust">
+                <br> 
+                <br>
+                
+                <input type="submit" value="Calculate">
+                <br> 
+                <br>
+                
+                <label>Churn Rate:</label>
+                <input type="number" value="{{ churn_rate }}">
+            </form>
+        </center>
+    </body>
+</html>
