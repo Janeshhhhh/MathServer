@@ -42,7 +42,7 @@ Render the result to the HTML template.
 Publish the website in Localhost.
 
 ## PROGRAM:
-
+```
 <html>
     <head>
         <title>Calculation</title>
@@ -109,6 +109,7 @@ urlpatterns = [
     path('', views.churn_calculator, name='churn_calculator'),
 ]
 
+```
 
 
 ## OUTPUT - SERVER SIDE:
